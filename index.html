@@ -3,26 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/style.css">
-	<script type = "text/javascript" src="js/script.js" defer></script>
-	<script type = "text/javascript" src = "js/jquery.js" defer></script>
+	<link rel="stylesheet" href="styles\style.css">
+
+	<script type = "text/javascript" src="js\script.js" defer></script>
+
+	<script type = "text/javascript" src = "js\jquery.js" defer></script>
+	<script src = "https://code.jquery.com/jquery-3.4.1.slim.min.js" defer></script>
 	
 	<title>Course</title>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="feedback_form">
+
 			<div class="form__head"><h1>Задать Вопрос</h1></div>
 
-			<form class="form__content" action="action.php" method="post" >
+			<form class="form" action="https://digital-spectr.com/ac/academy.php" method="post">
 
-					<p>Login</p>
-				   <p><input type="text" name="login"></p>
-				   <p>Password</p>
-				   <p><input type="password" name="password"></p>
-				   <p><input type="submit" value="sent"></p>
-				
+				<div class="form__content">
+					<input type="text" class="field" name="name" id="name" placeholder="Фамилия Имя Отчество *">
+					<input type="text" class="field" name="phone" id="phone" placeholder="Телефон *"> 
+					<input type="text" class="field" name="mail" id="mail" placeholder="Email">
+				</div>
+
+				<div class="form__footer"><button class = "button">Отправить Запрос</button></div>
+
 			</form>
+
 		</div>
 	</div>
 </body>
