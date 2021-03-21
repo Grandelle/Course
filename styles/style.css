@@ -1,10 +1,38 @@
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/roboto/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('fonts/roboto/roboto-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto/roboto-v20-latin_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('fonts/roboto/roboto-v20-latin_cyrillic-900.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('fonts/roboto/roboto-v20-latin_cyrillic-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto/roboto-v20-latin_cyrillic-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto/roboto-v20-latin_cyrillic-900.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto/roboto-v20-latin_cyrillic-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto/roboto-v20-latin_cyrillic-900.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
 h1{
 	font-family: Roboto;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 900;
 	font-size: 24px;
 	line-height: 20px;
 }
+
 .wrapper {
 	display: flex;
 	justify-content: center;
@@ -21,27 +49,39 @@ h1{
 
 	background: #F6F4F8;
 	border-radius: 12px;
-	box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
+	filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
 
 }
 .form__head {
-	position: relative;
 	margin-right: 50%;
 }
 .form__content {
 	display:flex;
 	flex-direction: column;
 }
-.field {
 
+.field {
 	width: 386px;
 	height: 48px;
 	margin-top: 20px;
-	border-radius: 6px;
-	border:none;
 	padding-left: 15px;
 
+	border-radius: 6px;
+	border:none;
+	box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+
+	font-size: 15px;
+	font-family: 'Roboto';
+ 	font-style: normal;
+   font-weight: 400;
+
+   outline-width:1px;
 }
+
+.field:focus{
+	outline-color:#854FC8;
+}
+
 .form__footer {}
 .button {
 	width: 401px;
@@ -49,13 +89,18 @@ h1{
 
 	margin-bottom: 10px;
 	margin-top: 20px;
+
 	border:none;
 	border-radius: 6px;
 	background: #6979F8;
-	font-size: 20px;
+
+	font-size: 17px;
+	font-family: 'Roboto';
 	color: #FFF;
 
+	cursor: pointer;
 }
+
 
 .error{
 	color: #F00;
@@ -68,7 +113,18 @@ h1{
 	margin-top: 0px;
 	width: 386px;
 	height: 48px;
+	padding-left: 15px;
+
 	border-radius: 6px;
 	border:none;
-	padding-left: 15px;
+	box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+
+	font-size: 15px;
+	font-family: 'Roboto';
+ 	font-style: normal;
+   font-weight: 400;
+
+	outline-width:1px;
+	outline-color:#854FC8;
 }
+
