@@ -5,7 +5,7 @@ var inputs = document.querySelectorAll('input');
 
 function validateEmail(email) {
    var re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
-   
+
    return re.test(String(email).toLowerCase());
   }
 
@@ -79,7 +79,11 @@ form.addEventListener('submit', function(event){
 			form[0].parentElement.insertBefore(error,fields[0]);
     }
 
-
-
 })
 
+button.addEventListener("mouseenter", function(event){
+  button.className = 'mouse_enter';
+})
+button.addEventListener("mouseleave", function(event){
+  button.className = 'button';
+})

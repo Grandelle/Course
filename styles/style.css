@@ -100,7 +100,23 @@ h1{
 
 	cursor: pointer;
 }
+.mouse_enter{
+  width: 401px;
+	height: 48px;
 
+	margin-bottom: 10px;
+	margin-top: 20px;
+
+	border:none;
+	border-radius: 6px;
+	background: #854FC8;
+
+	font-size: 17px;
+	font-family: 'Roboto';
+	color: #FFF;
+
+	cursor: pointer;
+}
 
 .error{
 	color: #F00;
@@ -127,4 +143,3 @@ h1{
 	outline-width:1px;
 	outline-color:#854FC8;
 }
-
